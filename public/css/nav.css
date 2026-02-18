@@ -1,0 +1,132 @@
+/* Twoje obecne style menu – bez zmian */
+
+.menu {
+    background: #111;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     position: relative;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Hamburger button – domyślnie ukryty */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Przyciski Wycena */
+.menu .btn {
+    background: #00c3ff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: #111;
+    font-weight: 600;
+}
+
+.menu .btn:hover {
+    background: white;
+    color: #111;
+}
+
+/* Logo */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link img {
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Efekt podkreślenia */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #00c3ff;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00c3ff;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu .logo-link::after {
+    display: none;
+}
+
+/* --- RESPONSYWNE --- */
+@media (max-width: 900px) {
+    /* ul w kolumnie */
+    .menu ul {
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        background: #111;
+        position: absolute; /* absolutnie pod menu */
+        top: 60px; /* wysokość menu */
+        left: 0;
+        transition: max-height 0.3s ease;
+        z-index: 99;
+    }
+
+    .menu ul.active {
+        max-height: 500px; /* rozwinięte menu */
+        padding: 10px 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* hamburger przy prawej */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
