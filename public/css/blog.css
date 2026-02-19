@@ -59,9 +59,146 @@
     line-height: 1.6;
 }
 
+/* ===== BLOG CREATE ===== */
+.blog-create {
+    padding: 80px 20px;
+    background: #f9fafb;
+    min-height: 100vh;
+}
+
+.blog-create h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+}
+
+.create-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #111;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 14px 20px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.blog-actions {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.add-post-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.add-post-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.blog-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.single-post {
+    padding: 80px 20px;
+}
+
+.single-post h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.post-meta {
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 750px;
+}
+
 /* Responsywność */
 @media (max-width: 600px) {
     .page-header h1 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .create-form {
+        padding: 25px;
+    }
+
+    .blog-create h1 {
+        font-size: 24px;
     }
 }

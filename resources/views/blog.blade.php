@@ -16,16 +16,27 @@
 </section>
 
 <section class="blog">
-    <div class="container blog-grid">
+    <div class="container">
 
-        <div class="blog-card">
-            <h3>Jak zwiększyć sprzedaż w sklepie internetowym?</h3>
-            <p>Sprawdź 5 sprawdzonych sposobów na większą konwersję.</p>
-        </div>
+        @auth
+            @if(auth()->user()->role === 'admin')
+                <div class="blog-actions">
+                    <a href="{{ route('blog.create') }}" class="add-post-btn">
+                        ➕ Dodaj post
+                    </a>
+                </div>
+            @endif
+        @endauth
 
-        <div class="blog-card">
-            <h3>Dlaczego SEO jest ważne?</h3>
-            <p>Dowiedz się, jak widoczność w Google wpływa na Twój biznes.</p>
+        <div class="blog-grid">
+            @foreach($posts as $post)
+                <a href="{{ route('blog.show', $post->slug) }}" class="blog-card-link">
+                    <div class="blog-card">
+                        <h3>{{ $post->title }}</h3>
+                        <p>{{ $post->excerpt }}</p>
+                    </div>
+                </a>
+            @endforeach
         </div>
 
     </div>

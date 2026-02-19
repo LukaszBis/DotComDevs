@@ -29,6 +29,27 @@
     transition: 0.3s ease;
 }
 
+/* LOGIN - desktop */
+.menu .login-btn {
+    background: transparent;
+    border: 2px solid #00c3ff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #00c3ff;
+    color: #111;
+}
+
+/* wypchnięcie loginu maksymalnie w prawo */
+.menu ul li.login-desktop {
+    margin-left: auto;
+}
+
 /* Hamburger button – domyślnie ukryty */
 .menu-toggle {
     display: none;
@@ -128,5 +149,19 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    /* reset auto marginesu */
+    .menu ul li.login-desktop {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .login-btn {
+        border: none;
+        background: #00c3ff;
+        color: #111;
+        display: inline-block;
+        padding: 10px 25px;
     }
 }

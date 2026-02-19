@@ -46,37 +46,3 @@
     margin: 10px 0;
     font-size: 18px;
 }
-
-/* STOPKA */
-
-.stopka {
-    background: #000;
-    color: #aaa;
-    padding: 60px 0;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-}
-
-.stopka h4 {
-    color: white;
-    margin-bottom: 15px;
-}
-
-.stopka ul {
-    list-style: none;
-    padding: 0;
-}
-
-.stopka a {
-    text-decoration: none;
-    color: #aaa;
-    transition: 0.3s;
-}
-
-.stopka a:hover {
-    color: #00c3ff;
-}

@@ -16,5 +16,11 @@
         <li><a href="{{ route('blog') }}">Blog</a></li>
         <li><a href="{{ route('kontakt') }}">Kontakt</a></li>
         <li><a href="{{ route('wycena') }}" class="btn">Wycena</a></li>
+        @auth
+            <li class="login-desktop"><a href="{{ route('logout') }}" class="login-btn">Wyloguj</a></li>
+        @endauth
+        @guest
+            <li class="login-desktop"><a href="{{ route('login') }}" class="login-btn">Zaloguj</a></li>
+        @endguest
     </ul>
 </nav>
