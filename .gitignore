@@ -25,3 +25,6 @@ Thumbs.db
 
 # notatki prywatne
 /promocja-notatki.md
+
+# dump z kontem admina - nie wrzucac na GitHuba
+/deploy/dane-startowe.sql

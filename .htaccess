@@ -1,0 +1,13 @@
+# Zapasowe przekierowanie do katalogu public/ dla hostingów, na których nie da się
+# ustawić public/ jako katalogu głównego domeny (np. cba.pl).
+# Na XAMPP nie jest używany, bo VirtualHost wskazuje bezpośrednio na public/.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Blokada dostępu do plików, które nie powinny być widoczne z internetu
+<FilesMatch "^(\.env|\.env\..*|composer\.(json|lock)|artisan|phpunit\.xml|package\.json|vite\.config\.js)$">
+    Require all denied
+</FilesMatch>
