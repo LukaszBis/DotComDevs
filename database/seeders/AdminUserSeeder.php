@@ -3,28 +3,24 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
 class AdminUserSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Tworzy konto administratora (dostęp do /panel i dodawania wpisów na blogu),
+     * jeśli jeszcze nie istnieje. Hasło zmień po pierwszym logowaniu.
      */
     public function run(): void
     {
-        User::create([
-            'name' => 'lbis',
-            'email' => 'lukasz.bis22@gmail.com',
-            'password' => Hash::make('dotcom123'),
-            'role' => 'admin',
-        ]);
-        User::create([
-            'name' => 'dkostek',
-            'email' => 'damian.kostek1@wp.pl',
-            'password' => Hash::make('dotcom123'),
-            'role' => 'admin',
-        ]);
+        User::firstOrCreate(
+            ['email' => 'lukasz.bis22@gmail.com'],
+            [
+                'name'     => 'lbis',
+                'password' => Hash::make('DotCom2026!'),
+                'role'     => 'admin',
+            ]
+        );
     }
 }

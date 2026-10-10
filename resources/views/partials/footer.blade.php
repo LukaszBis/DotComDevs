@@ -1,28 +1,46 @@
-<footer class="stopka">
+<footer class="site-footer">
     <div class="container footer-grid">
-        <div>
-            <h4>DotCom Devs</h4>
-            <p>Tworzymy strony i sklepy internetowe w Częstochowie.</p>
+        <div class="footer-brand">
+            <a href="{{ route('home') }}" class="brand">
+                <img src="{{ asset('images/logo.svg') }}" alt="" width="40" height="40">
+                <span>{{ config('site.brand_first') }}<strong>{{ config('site.brand_last') }}</strong></span>
+            </a>
+            <p>{{ config('site.tagline') }} Proste strony internetowe, pomoc w projektach i korepetycje z programowania dla studentów i uczniów.</p>
         </div>
 
         <div>
-            <h4>Linki</h4>
+            <h4>Nawigacja</h4>
             <ul>
-                <li><a href="#">O nas</a></li>
-                <li><a href="#">Zespół</a></li>
-                <li><a href="#">Strony internetowe</a></li>
-                <li><a href="#">Sklepy internetowe</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="{{ route('o-mnie') }}">O mnie</a></li>
+                <li><a href="{{ route('oferta') }}">Oferta</a></li>
+                <li><a href="{{ route('kontakt') }}">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>W czym pomagam</h4>
+            <ul>
+                <li><a href="{{ route('oferta') }}#strony">Strony internetowe</a></li>
+                <li><a href="{{ route('oferta') }}#projekty">Projekty na studia</a></li>
+                <li><a href="{{ route('oferta') }}#excel">Excel i arkusze</a></li>
+                <li><a href="{{ route('oferta') }}#korepetycje">Korepetycje z programowania</a></li>
             </ul>
         </div>
 
         <div>
             <h4>Kontakt</h4>
-            <p>+48 515 747 424</p>
-            <p>kontakt@dotcomdevs.pl</p>
-            <p>42-125 Libidza</p>
-            <p>9:00 – 17:00</p>
+            <ul>
+                <li><a href="tel:{{ preg_replace('/\s+/', '', config('site.phone')) }}">{{ config('site.phone') }}</a></li>
+                <li><a href="mailto:{{ config('site.email') }}">{{ config('site.email') }}</a></li>
+                <li>{{ config('site.area') }}</li>
+            </ul>
         </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© {{ date('Y') }} {{ config('site.brand') }} · {{ config('site.owner') }}</span>
+        @guest
+            <a href="{{ route('login') }}">Logowanie</a>
+        @endguest
     </div>
 </footer>
