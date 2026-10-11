@@ -10,11 +10,11 @@
 
     <div class="container hero-grid">
         <div class="hero-text">
-            <p class="eyebrow">Web developer · pomoc w projektach · korepetycje</p>
+            <p class="eyebrow">Web developer · pomoc w projektach · korepetycje · serwis komputerów</p>
             <h1>Cześć, jestem Łukasz. Pomagam ogarnąć <span class="grad-text">programowanie</span> i projekty IT.</h1>
             <p class="lead">
                 Robię proste, ładne strony internetowe, pomagam studentom w projektach zaliczeniowych i Excelu,
-                a uczniów szkół średnich przygotowuję z informatyki i programowania. Bez stresu, po ludzku.
+                a uczniów szkół średnich przygotowuję z informatyki i programowania. Naprawiam i konfiguruję też komputery i laptopy. Bez stresu, po ludzku.
             </p>
             <div class="hero-actions">
                 <a href="{{ route('kontakt') }}" class="btn btn-primary btn-lg">Zgłoś się</a>
@@ -45,7 +45,7 @@
         <div class="section-head">
             <p class="eyebrow">Oferta</p>
             <h2>W czym mogę Ci pomóc</h2>
-            <p>Cztery rzeczy, które robię najczęściej. Jeśli Twój temat nie pasuje do żadnej, i tak napisz.</p>
+            <p>Pięć rzeczy, które robię najczęściej. Jeśli Twój temat nie pasuje do żadnej, i tak napisz.</p>
         </div>
 
         <div class="grid grid-4">
@@ -85,6 +85,17 @@
                 <a href="{{ route('oferta') }}#korepetycje" class="link">Szczegóły</a>
             </article>
         </div>
+
+        <article class="card service service-wide">
+            <div class="icon icon-e">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="m9 10 2 2 4-4"/></svg>
+            </div>
+            <div class="service-wide-body">
+                <h3>Serwis komputerów i laptopów</h3>
+                <p>Diagnoza usterek, czyszczenie, wymiana dysku na SSD, instalacja systemu, usuwanie wirusów i przyspieszanie sprzętu. Na miejscu w Częstochowie i okolicach, prostsze rzeczy zdalnie.</p>
+            </div>
+            <a href="{{ route('oferta') }}#serwis" class="link">Szczegóły</a>
+        </article>
     </div>
 </section>
 
@@ -123,6 +134,7 @@
                     <li>Prosta strona wizytówka lub portfolio</li>
                     <li>Drobne poprawki i rozwój istniejącej strony</li>
                     <li>Arkusze i automatyzacje w Excelu</li>
+                    <li>Serwis, czyszczenie i konfiguracja komputerów i laptopów</li>
                 </ul>
             </div>
         </div>
@@ -181,7 +193,7 @@
     <div class="container">
         <div class="cta-band">
             <div>
-                <h2>Masz projekt, zaliczenie albo chcesz zacząć programować?</h2>
+                <h2>Masz projekt, zaliczenie, zepsuty laptop albo chcesz zacząć programować?</h2>
                 <p>Napisz, co Cię czeka. Odpiszę i razem ustalimy, jak to ogarnąć.</p>
             </div>
             <a href="{{ route('kontakt') }}" class="btn btn-light btn-lg">Napisz do mnie</a>

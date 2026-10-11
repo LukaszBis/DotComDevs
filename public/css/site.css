@@ -333,6 +333,17 @@ p { margin: 0 0 1em; }
 .service:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .service p { color: var(--muted); flex: 1; }
 
+.service-wide {
+    margin-top: 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+.service-wide .icon { margin-bottom: 0; }
+.service-wide-body { flex: 1; }
+.service-wide-body h3 { margin-bottom: 6px; }
+.service-wide p { margin: 0; }
+
 .icon {
     width: 48px;
     height: 48px;
@@ -349,6 +360,7 @@ p { margin: 0 0 1em; }
 .icon-b { background: linear-gradient(135deg, var(--c2), var(--c3)); }
 .icon-c { background: linear-gradient(135deg, var(--c3), var(--c4)); }
 .icon-d { background: linear-gradient(135deg, var(--c4), var(--c1)); }
+.icon-e { background: linear-gradient(135deg, var(--c2), var(--c4)); }
 
 .badge {
     display: inline-block;
@@ -799,6 +811,7 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 600px) {
     .grid-4 { grid-template-columns: 1fr; }
+    .service-wide { flex-direction: column; align-items: flex-start; gap: 16px; }
     .form-row { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
     .stats { grid-template-columns: 1fr 1fr; gap: 10px; }

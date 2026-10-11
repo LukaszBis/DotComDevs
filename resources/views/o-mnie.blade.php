@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('title', 'O mnie')
-@section('meta_description', 'Jestem Łukasz, web developer. Tworzę strony internetowe, pomagam studentom w projektach i uczę programowania.')
+@section('meta_description', 'Jestem Łukasz, web developer. Tworzę strony internetowe, pomagam studentom w projektach, uczę programowania i serwisuję komputery.')
 
 @section('content')
 
@@ -32,6 +32,8 @@
                 Nazywam się Łukasz i na co dzień zajmuję się tworzeniem stron internetowych.
                 Pracuję głównie w PHP i Laravelu, JavaScripcie i bazach danych, ale równie dobrze czuję się
                 w Excelu, w którym potrafię zrobić rzeczy, o których większość ludzi nie wie, że są możliwe.
+                Od lat grzebię też w sprzęcie, więc jeśli komputer albo laptop odmawia współpracy,
+                to również potrafię to ogarnąć.
             </p>
             <p>
                 Zaczynałem jak większość: od zadań na studiach, kolokwiów i projektów robionych na ostatnią chwilę.

@@ -5,7 +5,7 @@
                 <img src="{{ asset('images/logo.svg') }}" alt="" width="40" height="40">
                 <span>{{ config('site.brand_first') }}<strong>{{ config('site.brand_last') }}</strong></span>
             </a>
-            <p>{{ config('site.tagline') }} Proste strony internetowe, pomoc w projektach i korepetycje z programowania dla studentów i uczniów.</p>
+            <p>{{ config('site.tagline') }} Proste strony internetowe, pomoc w projektach, korepetycje z programowania oraz serwis komputerów i laptopów.</p>
         </div>
 
         <div>
@@ -24,6 +24,7 @@
                 <li><a href="{{ route('oferta') }}#projekty">Projekty na studia</a></li>
                 <li><a href="{{ route('oferta') }}#excel">Excel i arkusze</a></li>
                 <li><a href="{{ route('oferta') }}#korepetycje">Korepetycje z programowania</a></li>
+                <li><a href="{{ route('oferta') }}#serwis">Serwis komputerów i laptopów</a></li>
             </ul>
         </div>
 

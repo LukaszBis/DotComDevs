@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('title', 'Oferta')
-@section('meta_description', 'Strony internetowe, pomoc w projektach studenckich, Excel i korepetycje z programowania. Sprawdź, w czym mogę pomóc.')
+@section('meta_description', 'Strony internetowe, pomoc w projektach studenckich, Excel, korepetycje z programowania oraz serwis komputerów i laptopów. Sprawdź, w czym mogę pomóc.')
 
 @section('content')
 
@@ -9,7 +9,7 @@
     <div class="container">
         <p class="eyebrow">Oferta</p>
         <h1>W czym mogę pomóc</h1>
-        <p>Cztery obszary, w których działam najczęściej. Każdy temat wyceniam indywidualnie, a dla studentów i uczniów mam przystępne stawki.</p>
+        <p>Pięć obszarów, w których działam najczęściej. Każdy temat wyceniam indywidualnie, a dla studentów i uczniów mam przystępne stawki.</p>
     </div>
 </section>
 
@@ -132,6 +132,36 @@
             </div>
         </article>
 
+        <article id="serwis" class="offer">
+            <div class="offer-head">
+                <div class="icon icon-e">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="m9 10 2 2 4-4"/></svg>
+                </div>
+                <div>
+                    <h2>Serwis komputerów i laptopów</h2>
+                    <p>Naprawa, czyszczenie, przyspieszanie i konfiguracja sprzętu.</p>
+                </div>
+            </div>
+            <div class="offer-body">
+                <div>
+                    <h3>Co robię</h3>
+                    <ul class="check-list">
+                        <li>Diagnoza usterek: komputer nie włącza się, zawiesza, wyłącza albo działa wolno</li>
+                        <li>Instalacja i konfiguracja Windowsa lub Linuxa, sterowniki, programy</li>
+                        <li>Usuwanie wirusów, porządkowanie systemu i przyspieszanie działania</li>
+                        <li>Wymiana dysku na SSD, dołożenie pamięci RAM, przeniesienie danych</li>
+                        <li>Czyszczenie z kurzu i wymiana pasty termoprzewodzącej w laptopach</li>
+                        <li>Odzyskiwanie danych i ustawienie kopii zapasowych</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Jak to wygląda</h3>
+                    <p>Opisz, co się dzieje ze sprzętem. Prostsze rzeczy, jak konfiguracja czy porządki w systemie, często ogarniam zdalnie. Jeśli trzeba zajrzeć do środka, umawiamy się w Częstochowie lub okolicach. Przed naprawą mówię, co jest nie tak i ile to będzie kosztować.</p>
+                    <a href="{{ route('kontakt') }}?temat=serwis" class="btn btn-primary btn-sm">Zapytaj o serwis</a>
+                </div>
+            </div>
+        </article>
+
     </div>
 </section>
 
@@ -149,7 +179,7 @@
             </details>
             <details>
                 <summary>Czy pracujesz zdalnie?</summary>
-                <p>Tak, większość rzeczy robię zdalnie. Korepetycje prowadzę online przez udostępnianie ekranu, a na żywo spotykam się w Częstochowie i okolicach.</p>
+                <p>Tak, większość rzeczy robię zdalnie. Korepetycje prowadzę online przez udostępnianie ekranu, a na żywo spotykam się w Częstochowie i okolicach. Serwis komputerów i laptopów, jeśli wymaga zajrzenia do środka, robię na miejscu w Częstochowie i okolicach.</p>
             </details>
             <details>
                 <summary>Mam projekt na jutro. Pomożesz?</summary>

@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone')->nullable();
             $table->string('who');     // student / uczen / firma / inne
-            $table->string('topic');   // strona / projekt / excel / korepetycje / inne
+            $table->string('topic');   // strona / projekt / excel / korepetycje / serwis / inne
             $table->text('message');
             $table->string('status')->default('new'); // new / in_progress / done
             $table->timestamps();

@@ -1,7 +1,7 @@
 @extends('partials.layout')
 
 @section('title', 'Kontakt')
-@section('meta_description', 'Napisz do mnie: strona internetowa, projekt na studia, Excel albo korepetycje z programowania. Odpiszę i ustalimy szczegóły.')
+@section('meta_description', 'Napisz do mnie: strona internetowa, projekt na studia, Excel, korepetycje z programowania albo serwis komputera. Odpiszę i ustalimy szczegóły.')
 
 @section('content')
 
@@ -124,10 +124,11 @@
             <div class="card card-soft">
                 <h3>Co warto napisać</h3>
                 <ul class="check-list small">
-                    <li>Czego dotyczy sprawa (strona, projekt, Excel, nauka)</li>
+                    <li>Czego dotyczy sprawa (strona, projekt, Excel, nauka, serwis)</li>
                     <li>Na kiedy to potrzebujesz</li>
                     <li>W jakiej technologii, jeśli jest narzucona</li>
                     <li>Link lub plik z treścią zadania, jeśli masz</li>
+                    <li>Przy serwisie: model sprzętu i co dokładnie się z nim dzieje</li>
                 </ul>
             </div>
         </aside>

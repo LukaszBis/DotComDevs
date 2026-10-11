@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Strony internetowe, projekty i korepetycje z programowania') · {{ config('app.name') }}</title>
-    <meta name="description" content="@yield('meta_description', 'Proste strony internetowe, pomoc w projektach studenckich i Excelu oraz korepetycje z programowania i informatyki dla uczniów i studentów.')">
+    <meta name="description" content="@yield('meta_description', 'Proste strony internetowe, pomoc w projektach studenckich i Excelu, korepetycje z programowania i informatyki oraz serwis komputerów i laptopów.')">
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
     <meta property="og:title" content="{{ config('site.brand') }} · {{ config('site.tagline') }}">
     <meta property="og:image" content="{{ asset('images/logo.svg') }}">

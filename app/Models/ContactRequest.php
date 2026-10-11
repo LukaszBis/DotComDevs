@@ -18,6 +18,7 @@ class ContactRequest extends Model
         'projekt'     => 'Projekt zaliczeniowy / na studia',
         'excel'       => 'Excel i arkusze kalkulacyjne',
         'korepetycje' => 'Korepetycje z programowania / informatyki',
+        'serwis'      => 'Serwis komputera / laptopa',
         'inne'        => 'Coś innego',
     ];
 
