@@ -32,7 +32,7 @@
                     <ul class="check-list">
                         <li>Strony wizytówki i landing page</li>
                         <li>Portfolio i strony osobiste</li>
-                        <li>Strony na WordPressie lub w czystym kodzie (HTML, CSS, JS, PHP)</li>
+                        <li>Strony w czystym kodzie (HTML, CSS, JS, PHP)</li>
                         <li>Poprawki, odświeżenie i rozwój istniejących stron</li>
                         <li>Podstawowe SEO, szybkość i działanie na telefonie</li>
                     </ul>
@@ -61,7 +61,7 @@
                     <ul class="check-list">
                         <li>Aplikacje webowe (PHP, Laravel, JavaScript)</li>
                         <li>Bazy danych: projekt, SQL, normalizacja, zapytania</li>
-                        <li>Skrypty i programy w Pythonie, C++ i innych językach</li>
+                        <li>Skrypty i programy w C++ i innych językach</li>
                         <li>Debugowanie i dokończenie projektu, który utknął</li>
                         <li>Konsultacje przed obroną: tłumaczę, jak działa kod</li>
                     </ul>
@@ -117,7 +117,7 @@
                 <div>
                     <h3>Co robię</h3>
                     <ul class="check-list">
-                        <li>Podstawy programowania: Python, C++, JavaScript</li>
+                        <li>Podstawy programowania: C++, JavaScript</li>
                         <li>Algorytmy i struktury danych, logika, rozwiązywanie zadań</li>
                         <li>Przygotowanie do matury z informatyki</li>
                         <li>HTML, CSS i pierwsze własne strony</li>

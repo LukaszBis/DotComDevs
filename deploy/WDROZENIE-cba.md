@@ -31,6 +31,11 @@ Skopiuj `deploy/env.production.example` jako `.env` (lokalnie, w osobnym miejscu
 uzupełnij dane bazy z panelu cba.pl, wpisz `APP_URL` z `https://`.
 `APP_KEY` skopiuj z lokalnego `.env` (linia `APP_KEY=base64:...`).
 
+Powiadomienia o nowych zgłoszeniach: załóż w panelu cba.pl skrzynkę (np. `kontakt@twoja-domena.pl`),
+wpisz jej dane w `MAIL_*` (host/port SMTP sprawdź w panelu przy skrzynce),
+a w `MAIL_NOTIFY_TO` adres, na który mają przychodzić powiadomienia.
+Jeśli wysyłka się nie uda, zgłoszenie i tak zapisze się w panelu, a błąd trafi do `storage/logs/laravel.log`.
+
 ## 4. Wgranie przez FTP (np. FileZilla)
 
 Wgraj do katalogu domeny **wszystko** z projektu oprócz:

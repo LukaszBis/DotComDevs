@@ -180,11 +180,9 @@
             <li>PHP</li>
             <li>Laravel</li>
             <li>MySQL / SQL</li>
-            <li>Python</li>
             <li>C++</li>
             <li>Git</li>
             <li>Excel / Google Sheets</li>
-            <li>WordPress</li>
         </ul>
     </div>
 </section>

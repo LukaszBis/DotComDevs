@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactRequest;
+use App\Mail\NewContactRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -41,7 +44,20 @@ class ContactController extends Controller
             'message.min'      => 'Wiadomość jest za krótka, napisz trochę więcej.',
         ]);
 
-        ContactRequest::create($data);
+        $contactRequest = ContactRequest::create($data);
+
+        // Powiadomienie mailowe. Błąd wysyłki nie może zepsuć formularza:
+        // zgłoszenie i tak jest już zapisane w panelu.
+        if ($notifyTo = config('mail.notify_to')) {
+            try {
+                Mail::to($notifyTo)->send(new NewContactRequest($contactRequest));
+            } catch (\Throwable $e) {
+                Log::error('Nie udało się wysłać powiadomienia o zgłoszeniu', [
+                    'id'    => $contactRequest->id,
+                    'error' => $e->getMessage(),
+                ]);
+            }
+        }
 
         return redirect()->route('kontakt')->with('success', true);
     }

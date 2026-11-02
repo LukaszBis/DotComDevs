@@ -115,4 +115,8 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    // Adres, na który przychodzą powiadomienia o nowych zgłoszeniach z formularza.
+    // Puste = powiadomienia wyłączone.
+    'notify_to' => env('MAIL_NOTIFY_TO'),
+
 ];
